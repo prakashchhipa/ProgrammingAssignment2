@@ -35,6 +35,8 @@ makeCacheMatrix <- function(m = matrix()) {
 
 ## cacheSolve function takes above function as argument and always checks the matrix inverse in cache whenever it is being requested. If inverse matrix found
 ## in cache then deliver it from cache else compute and keep it in cache and deliver to calling environment.
+## To run this program and visibility of cache, first prepare matrix then call function makeCacheMatrix and store the result in one variable.
+## Use the result varible from previous step in repetative calling of function cacheSolve. Until matrix will not be changed, inverse matrix will be returned from cache.
 
 cacheSolve <- function(x, ...) {
 
